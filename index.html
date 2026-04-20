@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Portafolio Académico - Jennifer Rivera Pecho</title>
+  <link href="https://fonts.googleapis.com/css2?family=Sora:wght@300;400;600;700;800&family=DM+Sans:wght@300;400;500&display=swap" rel="stylesheet"/>
+  <link rel="stylesheet" href="styles.css"/>
+</head>
+<body>
+
+<!-- NAV -->
+<nav>
+  <div class="nav-brand">
+    <div class="nav-avatar">J</div>
+    <span class="nav-name">Jennifer Rivera Pecho</span>
+  </div>
+  <div class="nav-links">
+    <a href="#inicio">Inicio</a>
+    <a href="#tareas">Tareas</a>
+    <a href="#perfil">Perfil</a>
+    <a href="#git">Git & GitHub</a>
+    <a href="#login">Login</a>
+  </div>
+</nav>
+
+<!-- HERO -->
+<div id="inicio" style="margin-top:var(--nav-h); padding-top:2rem;">
+  <div style="max-width:1100px;margin:0 auto;padding:2rem 2rem 0;">
+    <div class="hero-card">
+      <div class="hero-logo">
+        <svg viewBox="0 0 200 200" xmlns="http://www.w3.org/2000/svg">
+          <polygon points="100,10 185,57.5 185,142.5 100,190 15,142.5 15,57.5" fill="#1a56db"/>
+          <path d="M80 80 Q80 130 100 130 Q120 130 120 80" stroke="white" stroke-width="10" fill="none" stroke-linecap="round"/>
+          <path d="M95 65 Q100 55 105 65 Q115 80 100 90 Q85 80 95 65Z" fill="white"/>
+          <text x="100" y="165" text-anchor="middle" fill="white" font-family="Arial Black" font-size="18" font-weight="900">UPLA</text>
+        </svg>
+      </div>
+      <div class="hero-content">
+        <div class="badge">Portafolio académico</div>
+        <h1 class="hero-title">Mi Portafolio de Trabajos</h1>
+        <p class="hero-sub">Bienvenido a mi espacio académico. Aquí encontrarás mis tareas, proyectos y avances realizados durante el curso.</p>
+        <div class="hero-btns">
+          <a href="#tareas" class="btn-primary">Ver tareas</a>
+          <a href="#perfil" class="btn-outline">Mi perfil</a>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- QUICK CARDS -->
+<div class="quick-grid" style="margin-top:2rem;">
+  <a href="#tareas" class="qcard">
+    <div class="qcard-icon ic-tasks">📁</div>
+    <h3>Tareas</h3>
+    <p>Revisa los trabajos por semana.</p>
+  </a>
+  <a href="#login" class="qcard">
+    <div class="qcard-icon ic-login">🔐</div>
+    <h3>Login</h3>
+    <p>Acceso para subir o editar archivos.</p>
+  </a>
+  <a href="#perfil" class="qcard">
+    <div class="qcard-icon ic-profile">👤</div>
+    <h3>Perfil</h3>
+    <p>Información del estudiante.</p>
+  </a>
+  <a href="#git" class="qcard">
+    <div class="qcard-icon ic-git">💻</div>
+    <h3>¿Qué es Git y GitHub?</h3>
+    <p>Conoce la diferencia entre estas herramientas.</p>
+  </a>
+</div>
+
+<!-- TAREAS / 8 SEMANAS -->
+<section id="tareas">
+  <h2 class="section-title"><span></span>Tareas por Semana</h2>
+  <div class="weeks-grid">
+    <div class="week-card">
+      <div class="week-num">Semana 1</div>
+      <div class="week-title">Introducción al curso</div>
+      <div class="week-desc">Presentación del sílabo, objetivos del curso y configuración del entorno de trabajo.</div>
+      <span class="week-status s-done">✓ Completado</span>
+    </div>
+    <div class="week-card">
+      <div class="week-num">Semana 2</div>
+      <div class="week-title">Fundamentos de Git</div>
+      <div class="week-desc">Comandos básicos: init, add, commit, log. Creación del primer repositorio local.</div>
+      <span class="week-status s-done">✓ Completado</span>
+    </div>
+    <div class="week-card">
+      <div class="week-num">Semana 3</div>
+      <div class="week-title">GitHub y repositorios remotos</div>
+      <div class="week-desc">Creación de cuenta en GitHub, push, pull, clone y gestión de repositorios en la nube.</div>
+      <span class="week-status s-done">✓ Completado</span>
+    </div>
+    <div class="week-card">
+      <div class="week-num">Semana 4</div>
+      <div class="week-title">Ramas y Merge</div>
+      <div class="week-desc">Trabajo con ramas (branch), fusión de cambios (merge) y resolución de conflictos básicos.</div>
+      <span class="week-status s-done">✓ Completado</span>
+    </div>
+    <div class="week-card">
+      <div class="week-num">Semana 5</div>
+      <div class="week-title">HTML y CSS básico</div>
+      <div class="week-desc">Creación de páginas web con HTML5 y estilos con CSS3. Estructura de un portafolio.</div>
+      <span class="week-status s-progress">⏳ En progreso</span>
+    </div>
+    <div class="week-card">
+      <div class="week-num">Semana 6</div>
+      <div class="week-title">GitHub Pages</div>
+      <div class="week-desc">Publicación del portafolio en línea usando GitHub Pages de forma gratuita.</div>
+      <span class="week-status s-progress">⏳ En progreso</span>
+    </div>
+    <div class="week-card">
+      <div class="week-num">Semana 7</div>
+      <div class="week-title">Colaboración en equipo</div>
+      <div class="week-desc">Pull Requests, revisión de código y buenas prácticas de trabajo colaborativo en GitHub.</div>
+      <span class="week-status s-pending">○ Pendiente</span>
+    </div>
+    <div class="week-card">
+      <div class="week-num">Semana 8</div>
+      <div class="week-title">Proyecto final integrador</div>
+      <div class="week-desc">Entrega del portafolio académico completo con todas las semanas documentadas y publicado.</div>
+      <span class="week-status s-pending">○ Pendiente</span>
+    </div>
+  </div>
+</section>
+
+<!-- PERFIL -->
+<section id="perfil">
+  <h2 class="section-title"><span></span>Perfil del Estudiante</h2>
+  <div class="perfil-card">
+    <div class="perfil-avatar">J</div>
+    <div class="perfil-info">
+      <h2>Jennifer Rivera Pecho</h2>
+      <div class="career">Ingeniería de Sistemas — UPLA</div>
+      <p>Estudiante de la Universidad Peruana Los Andes (UPLA), interesada en el desarrollo de software y el uso de herramientas modernas de control de versiones. Este portafolio documenta mi progreso académico a lo largo del curso.</p>
+      <div class="perfil-tags">
+        <span class="tag">Git</span>
+        <span class="tag">GitHub</span>
+        <span class="tag">HTML & CSS</span>
+        <span class="tag">GitHub Pages</span>
+        <span class="tag">Control de versiones</span>
+        <span class="tag">UPLA</span>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- GIT & GITHUB -->
+<section id="git">
+  <h2 class="section-title"><span></span>¿Qué es Git y GitHub?</h2>
+  <div class="git-grid">
+    <div class="git-box">
+      <h3>🔧 Git</h3>
+      <p>Git es un <strong>sistema de control de versiones</strong> distribuido creado por Linus Torvalds en 2005. Permite rastrear cambios en archivos a lo largo del tiempo y colaborar con otros sin perder historial.</p>
+      <ul>
+        <li>Se usa desde la <strong>terminal (línea de comandos)</strong></li>
+        <li>Funciona de forma <strong>local</strong> en tu computadora</li>
+        <li>Guarda "snapshots" del proyecto llamados <strong>commits</strong></li>
+        <li>Permite crear <strong>ramas (branches)</strong> independientes</li>
+      </ul>
+    </div>
+    <div class="git-box">
+      <h3>🐙 GitHub</h3>
+      <p>GitHub es una <strong>plataforma en la nube</strong> que aloja repositorios de Git. Permite compartir código, trabajar en equipo y publicar proyectos en internet de forma gratuita.</p>
+      <ul>
+        <li>Es una <strong>interfaz web</strong> para repositorios Git</li>
+        <li>Permite <strong>colaborar</strong> con otras personas globalmente</li>
+        <li>Ofrece <strong>GitHub Pages</strong> para publicar sitios web</li>
+        <li>Incluye <strong>Issues y Pull Requests</strong> para gestionar proyectos</li>
+      </ul>
+    </div>
+    <div class="git-box" style="grid-column:1/-1;">
+      <h3>📌 Diferencia clave</h3>
+      <p><strong>Git</strong> es la herramienta (software) que gestiona versiones en tu máquina. <strong>GitHub</strong> es el servicio en línea donde puedes almacenar y compartir esos repositorios. Git puede usarse sin GitHub, pero GitHub necesita Git para funcionar.</p>
+    </div>
+  </div>
+</section>
+
+<!-- LOGIN -->
+<section id="login">
+  <h2 class="section-title"><span></span>Acceso al Portafolio</h2>
+  <div class="login-box">
+    <h2>Iniciar sesión</h2>
+    <div class="form-group">
+      <label>Usuario</label>
+      <input type="text" placeholder="jennifer.rivera" />
+    </div>
+    <div class="form-group">
+      <label>Contraseña</label>
+      <input type="password" placeholder="••••••••" />
+    </div>
+    <button class="form-submit">Ingresar</button>
+  </div>
+</section>
+
+<!-- FOOTER -->
+<footer>
+  © 2025 Jennifer Rivera Pecho · UPLA · Portafolio Académico
+</footer>
+
+</body>
+</html>
